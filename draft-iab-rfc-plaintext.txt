@@ -4,12 +4,12 @@
 
 Internet Architecture Board                                  H. Flanagan
 Internet-Draft                                                RFC Editor
-Intended status: Informational                           January 7, 2016
-Expires: July 10, 2016
+Intended status: Informational                          January 12, 2016
+Expires: July 15, 2016
 
 
                     Requirements for Plain-Text RFCs
-                      draft-flanagan-plaintext-09
+                       draft-iab-rfc-plaintext-00
 
 Abstract
 
@@ -46,14 +46,14 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on July 10, 2016.
+   This Internet-Draft will expire on July 15, 2016.
 
 
 
 
 
 
-Flanagan                  Expires July 10, 2016                 [Page 1]
+Flanagan                  Expires July 15, 2016                 [Page 1]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Flanagan                  Expires July 10, 2016                 [Page 2]
+Flanagan                  Expires July 15, 2016                 [Page 2]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -152,7 +152,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
       output.  In particular, handling page breaks and associated widows
       and orphans for paginated output is tricky [WIDOWS].
 
-   o  Additional publication formats--for example: PDF, HTML-- will be
+   o  Additional publication formats--for example: PDF, HTML--will be
       available that will offer features such as markup, pretty
       printing, etc.
 
@@ -165,7 +165,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-Flanagan                  Expires July 10, 2016                 [Page 3]
+Flanagan                  Expires July 15, 2016                 [Page 3]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -204,8 +204,8 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
    Artwork is defined as anything marked by the XML >artwork< element
    (see Section 2.5 of "The 'XML2RFC' version 3 Vocabulary"
-   [I-D.hoffman-xml2rfc].  Only the 'type=ascii-art' will be rendered
-   within the plain-text format.  This marks figures drawn with ASCII
+   [I-D.iab-xml2rfc].  Only the 'type=ascii-art' will be rendered within
+   the plain-text format.  This marks figures drawn with ASCII
    characters.
 
    If the canonical format includes figures or artwork other than ASCII-
@@ -221,7 +221,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-Flanagan                  Expires July 10, 2016                 [Page 4]
+Flanagan                  Expires July 15, 2016                 [Page 4]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -277,7 +277,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-Flanagan                  Expires July 10, 2016                 [Page 5]
+Flanagan                  Expires July 15, 2016                 [Page 5]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -286,9 +286,10 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
    The plain-text does not attempt to render anything but the most basic
    document metadata from the XML.  The document layout and structure is
-   instead guided directly by the "RFC Style Guide."  URIs that occur in
-   targets may be placed into parenthetical expressions or reference
-   entries.  [I-D.hoffman-xml2rfc]
+   instead guided directly by the RFC Style Guide and the updates
+   reflected in the web portion of the Style Guide [STYLEWEB].  URIs
+   that occur in targets may be placed into parenthetical expressions or
+   reference entries [I-D.iab-xml2rfc].
 
    Since plain-text cannot include any rich-text-style formatting, such
    as bold or italic fonts, tags such as <em> and <strong> will not be
@@ -332,8 +333,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-
-Flanagan                  Expires July 10, 2016                 [Page 6]
+Flanagan                  Expires July 15, 2016                 [Page 6]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -389,7 +389,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-Flanagan                  Expires July 10, 2016                 [Page 7]
+Flanagan                  Expires July 15, 2016                 [Page 7]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -407,9 +407,9 @@ Internet-Draft               Plain-Text RFCs                January 2016
               draft-flanagan-nonascii-06 (work in progress), November
               2015.
 
-   [I-D.hoffman-xml2rfc]
+   [I-D.iab-xml2rfc]
               Hoffman, P., "The 'XML2RFC' version 3 Vocabulary", draft-
-              hoffman-xml2rfc-23 (work in progress), September 2015.
+              iab-xml2rfc-01 (work in progress), January 2016.
 
    [RFC3629]  Yergeau, F., "UTF-8, a transformation format of ISO
               10646", STD 63, RFC 3629, DOI 10.17487/RFC3629, November
@@ -436,19 +436,26 @@ Internet-Draft               Plain-Text RFCs                January 2016
               Authors", August 2004, <http://www.rfc-editor.org/rfc-
               editor/instructions2authors.txt>.
 
+   [STYLEWEB]
+              RFC Editor, "Web Portion of the Style Guide", May 2015,
+              <http://www.rfc-editor.org/styleguide/part2/>.
+
+
+
+
+
+
+Flanagan                  Expires July 15, 2016                 [Page 8]
+
+Internet-Draft               Plain-Text RFCs                January 2016
+
+
    [UNICODE-GLOSSARY]
               The Unicode Consortium, "Glossary of Unicode Terms", 2014,
               <http://www.unicode.org/glossary/>.
 
    [WIDOWS]   Wikipedia, "Widows and orphans", October 2014,
               <http://en.wikipedia.org/wiki/Widows_and_orphans>.
-
-
-
-Flanagan                  Expires July 10, 2016                 [Page 8]
-
-Internet-Draft               Plain-Text RFCs                January 2016
-
 
    [XML-ANNOUNCE]
               Flanagan, H., "Subject: Direction of the RFC Format
@@ -494,11 +501,4 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-Flanagan                  Expires July 10, 2016                 [Page 9]
+Flanagan                  Expires July 15, 2016                 [Page 9]
