@@ -4,12 +4,12 @@
 
 Internet Architecture Board                                  H. Flanagan
 Internet-Draft                                                RFC Editor
-Intended status: Informational                          January 12, 2016
-Expires: July 15, 2016
+Intended status: Informational                          January 13, 2016
+Expires: July 16, 2016
 
 
                     Requirements for Plain-Text RFCs
-                       draft-iab-rfc-plaintext-00
+                       draft-iab-rfc-plaintext-01
 
 Abstract
 
@@ -46,14 +46,14 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on July 15, 2016.
+   This Internet-Draft will expire on July 16, 2016.
 
 
 
 
 
 
-Flanagan                  Expires July 15, 2016                 [Page 1]
+Flanagan                  Expires July 16, 2016                 [Page 1]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -84,20 +84,21 @@ Table of Contents
      4.3.  Line Width  . . . . . . . . . . . . . . . . . . . . . . .   5
      4.4.  Line Spacing  . . . . . . . . . . . . . . . . . . . . . .   5
      4.5.  Hyphenation . . . . . . . . . . . . . . . . . . . . . . .   5
-   5.  Elements from the xml2rfc v3 vocabulary . . . . . . . . . . .   6
+   5.  Elements from the xml2rfc v3 vocabulary . . . . . . . . . . .   5
    6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   6
    7.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   6
    8.  Security Considerations . . . . . . . . . . . . . . . . . . .   6
    9.  Change Log for the Draft  . . . . . . . . . . . . . . . . . .   6
-     9.1.  draft-flanagan-plaintext-09 to draft-iab-rfc-plaintext-00   6
-     9.2.  -08 to -09  . . . . . . . . . . . . . . . . . . . . . . .   6
-     9.3.  -07 to -08  . . . . . . . . . . . . . . . . . . . . . . .   6
-     9.4.  -06 to -07  . . . . . . . . . . . . . . . . . . . . . . .   7
-     9.5.  -05 to -06  . . . . . . . . . . . . . . . . . . . . . . .   7
-     9.6.  -04 to -05  . . . . . . . . . . . . . . . . . . . . . . .   7
-     9.7.  -03 to -04  . . . . . . . . . . . . . . . . . . . . . . .   7
-     9.8.  -02 to -03  . . . . . . . . . . . . . . . . . . . . . . .   7
-     9.9.  -01 to -02  . . . . . . . . . . . . . . . . . . . . . . .   7
+     9.1.  draft-iab-rfc-plantext-00 to -01  . . . . . . . . . . . .   6
+     9.2.  draft-flanagan-plaintext-09 to draft-iab-rfc-plaintext-00   6
+     9.3.  -08 to -09  . . . . . . . . . . . . . . . . . . . . . . .   6
+     9.4.  -07 to -08  . . . . . . . . . . . . . . . . . . . . . . .   6
+     9.5.  -06 to -07  . . . . . . . . . . . . . . . . . . . . . . .   7
+     9.6.  -05 to -06  . . . . . . . . . . . . . . . . . . . . . . .   7
+     9.7.  -04 to -05  . . . . . . . . . . . . . . . . . . . . . . .   7
+     9.8.  -03 to -04  . . . . . . . . . . . . . . . . . . . . . . .   7
+     9.9.  -02 to -03  . . . . . . . . . . . . . . . . . . . . . . .   7
+     9.10. -01 to -02  . . . . . . . . . . . . . . . . . . . . . . .   7
    10. References  . . . . . . . . . . . . . . . . . . . . . . . . .   8
      10.1.  Normative References . . . . . . . . . . . . . . . . . .   8
      10.2.  Informative References . . . . . . . . . . . . . . . . .   8
@@ -108,8 +109,7 @@ Table of Contents
 
 
 
-
-Flanagan                  Expires July 15, 2016                 [Page 2]
+Flanagan                  Expires July 16, 2016                 [Page 2]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -165,7 +165,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-Flanagan                  Expires July 15, 2016                 [Page 3]
+Flanagan                  Expires July 16, 2016                 [Page 3]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -173,9 +173,6 @@ Internet-Draft               Plain-Text RFCs                January 2016
    Where practical, the original guidance for the structure of a plain-
    text RFC has been kept, such as with line lengths, lines per page,
    etc.  [INS2AUTH]
-
-   Note that this document provides guidance for plain-text RFCs;
-   Internet-Drafts are out of scope.
 
    The details described in this document are expected to change based
    on experience gained in implementing the RFC production center's
@@ -193,7 +190,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
    Many elements within the xml2rfc v3 vocabulary have an attribute for
    the ASCII equivalent to a non-ASCII character string.  The ASCII
    equivalent will be rendered within the plain-text as per the guidance
-   in "The Use of Non-ASCII Characters in RFCs" [I-D.flanagan-nonascii].
+   in "The Use of Non-ASCII Characters in RFCs" [I-D.iab-rfc-nonascii].
    Please view the PDF version of that draft.
 
    The plain-text file will include a byte order mark (BOM) to provide
@@ -217,17 +214,17 @@ Internet-Draft               Plain-Text RFCs                January 2016
    art for the other outputs may do so, but they should be aware of the
    potential for confusion to individuals reading the RFC with two
    unique diagrams describing the same content.  If there is conflicting
+   information between the publication formats, please review the XML
+   and PDF files to resolve the conflict.
 
 
 
 
-Flanagan                  Expires July 15, 2016                 [Page 4]
+
+Flanagan                  Expires July 16, 2016                 [Page 4]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
-
-   information between the publication formats, please review the XML
-   and PDF files to resolve the conflict.
 
 4.  General Page Format Layout
 
@@ -272,21 +269,19 @@ Internet-Draft               Plain-Text RFCs                January 2016
    Hyphenated words (e.g., "Internet-Draft"), should not be split across
    successive lines.
 
-
-
-
-
-
-Flanagan                  Expires July 15, 2016                 [Page 5]
-
-Internet-Draft               Plain-Text RFCs                January 2016
-
-
 5.  Elements from the xml2rfc v3 vocabulary
 
    The plain-text does not attempt to render anything but the most basic
    document metadata from the XML.  The document layout and structure is
    instead guided directly by the RFC Style Guide and the updates
+
+
+
+Flanagan                  Expires July 16, 2016                 [Page 5]
+
+Internet-Draft               Plain-Text RFCs                January 2016
+
+
    reflected in the web portion of the Style Guide [STYLEWEB].  URIs
    that occur in targets may be placed into parenthetical expressions or
    reference entries [I-D.iab-xml2rfc].
@@ -316,16 +311,20 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 9.  Change Log for the Draft
 
-9.1.  draft-flanagan-plaintext-09 to draft-iab-rfc-plaintext-00
+9.1.  draft-iab-rfc-plantext-00 to -01
+
+   Inroduction: removed sentence restricting this format to RFCs only
+
+9.2.  draft-flanagan-plaintext-09 to draft-iab-rfc-plaintext-00
 
    Figures and Artwork, Character Encoding: included additional detail
    regarding how these items will be flagged within the XML.
 
-9.2.  -08 to -09
+9.3.  -08 to -09
 
    Security Considerations: added text
 
-9.3.  -07 to -08
+9.4.  -07 to -08
 
    Change log: forgot to update the change log for the -06 to -07
    changes.
@@ -333,24 +332,25 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-Flanagan                  Expires July 15, 2016                 [Page 6]
+
+Flanagan                  Expires July 16, 2016                 [Page 6]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
 
-9.4.  -06 to -07
+9.5.  -06 to -07
 
    Introduction: updated to state that this document does not require
    backwards compatibility.
 
-9.5.  -05 to -06
+9.6.  -05 to -06
 
    Abstract: Changed "cut over" to "transition"
 
    Elements from xml2rfc v3: emphasized that doc structure is guided by
    the RFC Style Guide
 
-9.6.  -04 to -05
+9.7.  -04 to -05
 
    Abstract and Introduction: Revised for better readability; clarified
    the definition and implications of the term "plain-text"
@@ -360,12 +360,12 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
    Elements from the xml2rfc v3 vocabulary: section added
 
-9.7.  -03 to -04
+9.8.  -03 to -04
 
    Change Log for the Draft: forgot to complete the change log between
    the various revisions of the draft
 
-9.8.  -02 to -03
+9.9.  -02 to -03
 
    Abstract: expanded
 
@@ -378,7 +378,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
    format, with an expectation of instructions and/or a script to create
    local, unpaginated copies for individual use.
 
-9.9.  -01 to -02
+9.10.  -01 to -02
 
    Introduction: added pointer to original page layout information
 
@@ -389,7 +389,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-Flanagan                  Expires July 15, 2016                 [Page 7]
+Flanagan                  Expires July 16, 2016                 [Page 7]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -402,10 +402,10 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 10.1.  Normative References
 
-   [I-D.flanagan-nonascii]
+   [I-D.iab-rfc-nonascii]
               Flanagan, H., "The Use of Non-ASCII Characters in RFCs",
-              draft-flanagan-nonascii-06 (work in progress), November
-              2015.
+              draft-iab-rfc-nonascii-00 (work in progress), January
+              2016.
 
    [I-D.iab-xml2rfc]
               Hoffman, P., "The 'XML2RFC' version 3 Vocabulary", draft-
@@ -445,7 +445,7 @@ Internet-Draft               Plain-Text RFCs                January 2016
 
 
 
-Flanagan                  Expires July 15, 2016                 [Page 8]
+Flanagan                  Expires July 16, 2016                 [Page 8]
 
 Internet-Draft               Plain-Text RFCs                January 2016
 
@@ -501,4 +501,4 @@ Author's Address
 
 
 
-Flanagan                  Expires July 15, 2016                 [Page 9]
+Flanagan                  Expires July 16, 2016                 [Page 9]

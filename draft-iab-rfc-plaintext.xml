@@ -5,7 +5,7 @@
 <!ENTITY RFC5741 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5741.xml">
 <!ENTITY RFC6949 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6949.xml">
 <!ENTITY RFC7322 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7322.xml">
-<!ENTITY I-D.flanagan-nonascii SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.flanagan-nonascii.xml">
+<!ENTITY I-D.iab-rfc-nonascii SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.iab-rfc-nonascii.xml">
 <!ENTITY I-D.iab-xml2rfc SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.iab-xml2rfc.xml">
 ]>
 <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
@@ -16,7 +16,7 @@
 <?rfc sortrefs="yes" ?>
 <?rfc compact="yes" ?>
 <?rfc subcompact="no" ?>
-<rfc category="info" docName="draft-iab-rfc-plaintext-00" ipr="trust200902">
+<rfc category="info" docName="draft-iab-rfc-plaintext-01" ipr="trust200902">
 
 <!-- ***** FRONT MATTER ***** -->
 
@@ -34,7 +34,7 @@
     </address>
   </author>
 
-  <date day="12" month="January" year="2016" />
+  <date day="13" month="January" year="2016" />
 
   <area>General</area>
   <workgroup>Internet Architecture Board</workgroup>
@@ -120,9 +120,6 @@
       plain-text RFC has been kept, such as with line lengths, lines per 
       page, etc. <xref target="INS2AUTH"/></t>
 
-      <t>Note that this document provides guidance for plain-text RFCs; 
-      Internet-Drafts are out of scope.</t>
-
 <t>The details described in this document are expected to change based on experience gained in implementing the RFC production center's toolset. Revised documents will be published capturing those changes as the toolset is completed. Other implementers must not expect those changes to remain backwards-compatible with the details described this document.</t>
 
 
@@ -137,7 +134,7 @@
       <t>Many elements within the xml2rfc v3 vocabulary have an attribute
       for the ASCII equivalent to a non-ASCII character string. The ASCII
       equivalent will be rendered within the plain-text as per the guidance in
-       <xref target="I-D.flanagan-nonascii">"The Use of Non-ASCII
+       <xref target="I-D.iab-rfc-nonascii">"The Use of Non-ASCII
       Characters in RFCs"</xref>.  Please view the PDF version of that draft.
       </t>
 
@@ -245,6 +242,9 @@
     </section>
 
   <section anchor="Changes" title="Change Log for the Draft">
+    <section anchor="changes11" title="draft-iab-rfc-plantext-00 to -01">
+      <t>Inroduction: removed sentence restricting this format to RFCs only</t>
+    </section>
     <section anchor="changes10" title="draft-flanagan-plaintext-09 to draft-iab-rfc-plaintext-00">
       <t>Figures and Artwork, Character Encoding: included additional detail
       regarding how these items will be flagged within the XML.</t>
@@ -298,7 +298,7 @@
       &RFC5741;
       &RFC6949;
       &RFC7322;
-      &I-D.flanagan-nonascii;
+      &I-D.iab-rfc-nonascii;
       &I-D.iab-xml2rfc;
     </references>
     <references title="Informative References">
