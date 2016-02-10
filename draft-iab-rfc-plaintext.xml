@@ -17,7 +17,7 @@
 <?rfc sortrefs="yes" ?>
 <?rfc compact="yes" ?>
 <?rfc subcompact="no" ?>
-<rfc category="info" docName="draft-iab-rfc-plaintext-01" ipr="trust200902">
+<rfc category="info" docName="draft-iab-rfc-plaintext-02" ipr="trust200902">
 
 <!-- ***** FRONT MATTER ***** -->
 
@@ -35,7 +35,7 @@
     </address>
   </author>
 
-  <date day="19" month="January" year="2016" />
+  <date day="10" month="February" year="2016" />
 
   <area>General</area>
   <workgroup>Internet Architecture Board</workgroup>
@@ -125,7 +125,7 @@
       <t>Where practical, the original guidance for the structure of a 
       plain-text RFC has been kept, such as with line lengths, lines per 
       page, etc. <xref target="INS2AUTH"/>  Other publication formats, 
-      such as HTMl and PDF, will include additional features that will not
+      such as HTML and PDF, will include additional features that will not
       be present in the plain text (e.g., paragraph numbering, typographical
       emphasis.</t>
 
@@ -248,6 +248,9 @@
     </section>
 
   <section anchor="Changes" title="Change Log for the Draft">
+    <section anchor="changes12" title="draft-iab-rfc-plantext-01 to -02">
+      <t>nits fixed</t>
+    </section>
     <section anchor="changes11" title="draft-iab-rfc-plantext-00 to -01">
       <t>Introduction: removed sentence restricting this format to RFCs only; 
          clarified that plaintext will be based on existing practice (except 
