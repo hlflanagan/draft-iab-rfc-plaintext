@@ -7,7 +7,7 @@
 <!ENTITY RFC7322 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7322.xml">
 <!ENTITY I-D.iab-rfc-nonascii SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.iab-rfc-nonascii.xml">
 <!ENTITY I-D.iab-xml2rfc SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.iab-xml2rfc.xml">
-<!ENTITY I-D.iab-xml2rfcv2 SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.iab-xml2rfcv2.xml">
+<!ENTITY RFC7749 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7749.xml">
 ]>
 <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
 <?rfc strict="yes" ?>
@@ -17,7 +17,7 @@
 <?rfc sortrefs="yes" ?>
 <?rfc compact="yes" ?>
 <?rfc subcompact="no" ?>
-<rfc category="info" docName="draft-iab-rfc-plaintext-02" ipr="trust200902">
+<rfc category="info" docName="draft-iab-rfc-plaintext-03" ipr="trust200902">
 
 <!-- ***** FRONT MATTER ***** -->
 
@@ -35,7 +35,7 @@
     </address>
   </author>
 
-  <date day="10" month="February" year="2016" />
+  <date day="16" month="May" year="2016" />
 
   <area>General</area>
   <workgroup>Internet Architecture Board</workgroup>
@@ -93,7 +93,7 @@
       <t>A plain-text output for RFCs will continue to be required
       for the foreseeable future. The process of converting XML2RFC version 2
       (xml2rfc v2) into text documents is well understood 
-      <xref target="I-D.iab-xml2rfcv2"/>. We plan to rely on the practice 
+      <xref target="RFC7749"/>. We plan to rely on the practice 
       to date to inform the requirements for converting XML2RFC version 3
       (xml2rfc v3) to text <xref target="I-D.iab-xml2rfc"/>. This document 
       calls out those requirements that are changed from v2 or otherwise 
@@ -127,7 +127,7 @@
       page, etc. <xref target="INS2AUTH"/>  Other publication formats, 
       such as HTML and PDF, will include additional features that will not
       be present in the plain text (e.g., paragraph numbering, typographical
-      emphasis.</t>
+      emphasis).</t>
 
 <t>The details described in this document are expected to change based on experience gained in implementing the RFC production center's toolset. Revised documents will be published capturing those changes as the toolset is completed. Other implementers must not expect those changes to remain backwards-compatible with the details described this document.</t>
 
@@ -153,16 +153,15 @@
     </section>
 
     <section title="Figures and Artwork">
-      <t>Artwork is defined as anything marked by the XML &gt;artwork&lt; 
-      element (see Section 2.5 of <xref target="I-D.iab-xml2rfc">
-      "The 'XML2RFC' version 3 Vocabulary"</xref>. Only 
-      the 'type=ascii-art' will be rendered within the plain-text format.
-      This marks figures drawn with ASCII characters.</t>
-
-      <t>If the canonical format includes figures or artwork other than 
-      ASCII-art, then the plain-text output must include a pointer to the 
-      relevant figure in the HTML version of the RFC to allow readers to see 
-      the relevant artwork.</t>
+      <t>Artwork, such as network diagrams or performance graphs, must be 
+      tagged by the XML &lt;artwork&gt; element (see Section 2.5 
+      of <xref target="I-D.iab-xml2rfc">"The 'XML2RFC' version 3 Vocabulary"
+      </xref>. Where this artwork is comprised of an ASCII art diagram, it
+      must be tagged as 'type=ascii-art'. The plain-text format will
+      only include ASCII art. If the canonical format includes figures or 
+      artwork other than ASCII-art, then the plain-text output must include a 
+      pointer to the relevant figure in the HTML version of the RFC to allow 
+      readers to see the relevant artwork.</t>
 
       <t>Authors who wish to include ASCII-art for the plain-text file and 
       SVG art for the other outputs may do so, but they should be aware of the
@@ -224,10 +223,6 @@
         source file to build a document conforming to the layout and structure 
         described by the full RFC Style Guide (including the updates in the 
         web portion of the Style Guide). <xref target="STYLEWEB"/>  
-        In particular, the formatter will use the "submissionType", 
-        "seriesInfo", "author", "address", "title", "reference", 
-        "referencegroup", and "references" to build the front and back matter
-        of the document.
         </t>
     </section>
 
@@ -248,10 +243,15 @@
     </section>
 
   <section anchor="Changes" title="Change Log for the Draft">
+    <section anchor="changes13" title="draft-iab-rfc-plaintext-02 to -03">
+      <t>Figures and Artwork: clarified the state specifically around ASCII 
+         art</t>
+      <t>Elements from the xml2rfc v3: removed confusing sentence that called out particular elements for creation of front/back matter</t>
+    </section>
     <section anchor="changes12" title="draft-iab-rfc-plantext-01 to -02">
       <t>nits fixed</t>
     </section>
-    <section anchor="changes11" title="draft-iab-rfc-plantext-00 to -01">
+    <section anchor="changes11" title="draft-iab-rfc-plaintext-00 to -01">
       <t>Introduction: removed sentence restricting this format to RFCs only; 
          clarified that plaintext will be based on existing practice (except 
          where otherwise called out)</t>
@@ -312,9 +312,9 @@
       &RFC5741;
       &RFC6949;
       &RFC7322;
+      &RFC7749;
       &I-D.iab-rfc-nonascii;
       &I-D.iab-xml2rfc;
-      &I-D.iab-xml2rfcv2;
     </references>
     <references title="Informative References">
       <reference anchor="UNICODE-GLOSSARY"
